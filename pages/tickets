@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Concert Tickets | Fugu Experience Tamale 2026</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabinet+Grotesk:wght@800;900&family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Space+Grotesk:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container" style="padding-top: 0; padding-bottom: 0">
+        <div class="nav-wrapper">
+          <a href="index.html"
+            ><img
+              src="WhatsApp Image 2026-09-23 at 6.21.09 AM.jpeg"
+              alt="Logo"
+              style="height: 60px"
+          /></a>
+          <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="../pages/about.html">About Fugu</a>
+            <a href="../pages/programme.html">Programme</a>
+            <a href="../pages/tours.html">Tour Packages</a>
+            <a href="../pages/ride-north.html">Fugu Ride North</a>
+            <a href="../pages/tickets.html" style="color: var(--accent-red)">Tickets</a>
+            <a href="../pages/invest.html">Invest</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <h1
+        style="
+          font-family: var(--font-display);
+          font-size: 3.5rem;
+          text-align: center;
+        "
+      >
+        GRAND CONCERT TICKETS
+      </h1>
+      <p style="text-align: center; font-weight: 600">
+        Tamale Sports Stadium • Gates open 6:00 PM
+      </p>
+
+      <div class="ticket-grid">
+        <div class="ticket-card">
+          <h2>Regular Pass</h2>
+          <p>Access to General Stadium Stand & Exhibition Grounds</p>
+          <div class="price-tag">GH₵ 100</div>
+          <button class="btn-buy">Buy Ticket 🎟️</button>
+        </div>
+
+        <div class="ticket-card" style="border-color: var(--accent-red)">
+          <h2>VIP Front Stage</h2>
+          <p>Front Stage VIP Access + Complimentary Festival Fugu Sash</p>
+          <div class="price-tag">GH₵ 300</div>
+          <button
+            class="btn-buy"
+            style="background: var(--accent-red); color: white"
+          >
+            Buy VIP Ticket 🎟️
+          </button>
+        </div>
+
+        <div class="ticket-card">
+          <h2>VVIP Royal Lounge</h2>
+          <p>Exclusive Royal Box Seating, Open Bar & Cultural Buffet</p>
+          <div class="price-tag">GH₵ 750</div>
+          <button class="btn-buy">Buy VVIP Ticket 🎟️</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

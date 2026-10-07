@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Fugu Ride North — Accra to Tamale Motorcycle Caravan 2026 | Fugu
+      Experience
+    </title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Google Fonts: Vibrant Festival Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabinet+Grotesk:wght@800;900&family=Plus+Jakarta+Sans:ital,wght@0,400;0,600;0,700;0,800;1,600&family=Space+Grotesk:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- HEADER / NAVBAR -->
+    <header class="header">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="index.html" class="logo-container">
+            <img
+              src="../images/fuguxp-logo.png"
+              alt="Fugu Experience Tamale 2026 Logo"
+              class="logo-img"
+            />
+          </a>
+
+          <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="../pages/about.html">About Fugu</a>
+            <a href="../pages/programme.html">Programme</a>
+            <a href="../pages/tours.html">Tour Packages</a>
+            <a href="../pages/ride-north.html" class="active">Fugu Ride North</a>
+            <a href="../pages/tickets.html">Concert Tickets</a>
+            <a href="../pages/invest.html">Invest</a>
+          </nav>
+
+          <div class="nav-actions">
+            <button class="btn btn-pop" onclick="openRegistrationModal()">
+              Register to Ride 🏍️
+            </button>
+          </div>
+
+          <button class="mobile-menu-btn" id="menuToggle">Menu ☰</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- MOBILE NAVIGATION DRAWER -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <div class="drawer-header">
+        <img
+          src="WhatsApp Image 2026-09-23 at 6.21.09 AM.jpeg"
+          alt="Fugu Experience Logo"
+          style="height: 50px"
+        />
+        <button class="modal-close" id="closeDrawer">&times;</button>
+      </div>
+      <nav class="drawer-nav">
+        <a href="index.html" onclick="closeDrawerFunc()">Home</a>
+        <a href="about.html" onclick="closeDrawerFunc()">About Fugu</a>
+        <a href="programme.html" onclick="closeDrawerFunc()">Programme</a>
+        <a href="tours.html" onclick="closeDrawerFunc()">Tour Packages</a>
+        <a href="ride-north.html" onclick="closeDrawerFunc()"
+          >Fugu Ride North</a
+        >
+        <a href="tickets.html" onclick="closeDrawerFunc()">Concert Tickets</a>
+        <a href="invest.html" onclick="closeDrawerFunc()">Invest</a>
+      </nav>
+      <div
+        style="
+          margin-top: auto;
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+        "
+      >
+        <button
+          class="btn btn-pop"
+          onclick="closeDrawerFunc(); openRegistrationModal();"
+        >
+          Register to Ride 🏍
+        </button>
+      </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main>
+      <!-- HERO SECTION -->
+      <section class="hero">
+        <div class="container">
+          <div class="badge-pop">Road to Fugu | Accra to Tamale Caravan</div>
+
+          <h1 class="hero-title">
+            Ride North. <span class="highlight">Discover.</span> Experience
+            Fugu.
+          </h1>
+
+          <p class="hero-subtitle">
+            Join the epic official motorcycle caravan moving from Accra to
+            Tamale for Fugu Experience 2026. 500+ miles of pure culture,
+            freedom, and unity across Ghana.
+          </p>
+
+          <div
+            style="
+              display: flex;
+              gap: 1.25rem;
+              justify-content: center;
+              flex-wrap: wrap;
+            "
+          >
+            <button class="btn btn-pop" onclick="openRegistrationModal()">
+              Register for Ride North
+            </button>
+            <button class="btn btn-dark" onclick="scrollToPackages()">
+              View Rider Packages ↓
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- CARAVAN ROUTE SECTION -->
+      <section class="container">
+        <div class="route-bar">
+          <div
+            style="
+              width: 100%;
+              text-align: center;
+              font-family: var(--font-heading);
+              font-size: 0.9rem;
+              text-transform: uppercase;
+              letter-spacing: 0.25em;
+              color: var(--accent-yellow);
+              margin-bottom: 0.5rem;
+            "
+          >
+            Official Caravan Route
+          </div>
+          <div class="route-step">Accra</div>
+          <span class="route-arrow">➔</span>
+          <div class="route-step">Kumasi</div>
+          <span class="route-arrow">➔</span>
+          <div class="route-step">Techiman</div>
+          <span class="route-arrow">➔</span>
+          <div class="route-step">Kintampo</div>
+          <span class="route-arrow">➔</span>
+          <div class="route-step">Tamale</div>
+        </div>
+      </section>
+
+      <!-- RIDER PACKAGES SECTION -->
+      <section class="section section-border-top" id="packagesSection">
+        <div class="container">
+          <div class="section-header">
+            <p class="badge-pop" style="transform: rotate(1deg)">
+              Rider Registration
+            </p>
+            <h2 class="section-title">Rider Ticket Packages</h2>
+            <p style="color: var(--text-muted); font-weight: 600">
+              Choose your pass for the caravan . Add Grand Concert access during
+              registration !
+            </p>
+          </div>
+
+          <div class="pricing-grid">
+            <!-- PACKAGE 1: RIDE ONLY -->
+            <div class="pkg-card">
+              <div class="pkg-name">1. Ride Only</div>
+              <div class="pkg-price">
+                <span class="price-amount">GH¢100</span>
+              </div>
+
+              <ul class="pkg-features">
+                <li>Official Fugu Ride North registration</li>
+                <li>Organised motorcycle caravan participation</li>
+                <li>Rider identification & official wristband</li>
+                <li>Access to organized ride from Accra to Tamale</li>
+              </ul>
+
+              <div class="pkg-footer">
+                <button
+                  class="btn btn-dark"
+                  style="width: 100%"
+                  onclick="openRegistrationModal('Ride Only', 100)"
+                >
+                  Select Ride Only
+                </button>
+              </div>
+            </div>
+
+            <!-- PACKAGE 2: RIDE + T-SHIRT -->
+            <div class="pkg-card featured">
+              <div class="featured-tag">MOST POPULAR</div>
+              <div class="pkg-name">2. Ride + T-Shirt</div>
+              <div class="pkg-price">
+                <span class="price-amount">GH¢150</span>
+              </div>
+
+              <ul class="pkg-features">
+                <li>Everything in Ride Only</li>
+                <li>Official Fugu Experience branded T-shirt</li>
+                <li>Rider identification & wristband</li>
+                <li>Full caravan support along route</li>
+              </ul>
+
+              <div class="pkg-footer">
+                <button
+                  class="btn btn-pop"
+                  style="width: 100%"
+                  onclick="openRegistrationModal('Ride + T-Shirt', 150)"
+                >
+                  Select Ride + T-Shirt
+                </button>
+              </div>
+            </div>
+
+            <!-- PACKAGE 3: RIDE + POLO -->
+            <div class="pkg-card">
+              <div class="pkg-name">3. Ride + Polo</div>
+              <div class="pkg-price">
+                <span class="price-amount">GH¢250</span>
+              </div>
+
+              <ul class="pkg-features">
+                <li>Everything in Ride Only</li>
+                <li>Premium Fugu Experience branded Polo shirt</li>
+                <li>Rider identification & wristband</li>
+                <li>Caravan convoy access</li>
+              </ul>
+
+              <div class="pkg-footer">
+                <button
+                  class="btn btn-dark"
+                  style="width: 100%"
+                  onclick="openRegistrationModal('Ride + Polo', 250)"
+                >
+                  Select Ride + Polo
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONCERT ACCESS COMBOS -->
+      <section
+        class="section section-border-top"
+        style="background-color: #f3efe6"
+      >
+        <div class="container">
+          <div class="section-header">
+            <p
+              class="badge-pop"
+              style="
+                transform: rotate(-1deg);
+                background: var(--accent-red);
+                color: white;
+              "
+            >
+              Grand Concert Upgrades 🎵
+            </p>
+            <h2 class="section-title">Bundled Rider Passes</h2>
+            <p style="color: var(--text-muted); font-weight: 600">
+              Lock in your ride pass + entrance to Tamale Stadium's Grand
+              Concert!
+            </p>
+          </div>
+
+          <div class="pricing-grid">
+            <div class="pkg-card">
+              <div class="pkg-name">Ride + Regular Concert</div>
+              <p
+                style="
+                  font-size: 0.9rem;
+                  color: var(--text-muted);
+                  margin-bottom: 1rem;
+                  font-weight: 600;
+                "
+              >
+                Ride Only + Regular Concert Access
+              </p>
+              <div class="pkg-price">
+                <span class="price-amount">GH¢200</span>
+              </div>
+              <button
+                class="btn btn-dark"
+                style="width: 100%; margin-top: auto"
+                onclick="openRegistrationModal('Ride Only', 100, 'Regular Concert Access', 100)"
+              >
+                Get Regular Bundle
+              </button>
+            </div>
+
+            <div class="pkg-card">
+              <div class="pkg-name">Ride + T-Shirt + Concert</div>
+              <p
+                style="
+                  font-size: 0.9rem;
+                  color: var(--text-muted);
+                  margin-bottom: 1rem;
+                  font-weight: 600;
+                "
+              >
+                Ride + T-shirt + wristband + Regular Concert
+              </p>
+              <div class="pkg-price">
+                <span class="price-amount">GH¢250</span>
+              </div>
+              <button
+                class="btn btn-dark"
+                style="width: 100%; margin-top: auto"
+                onclick="openRegistrationModal('Ride + T-Shirt', 150, 'Regular Concert Access', 100)"
+              >
+                Get T-Shirt Bundle
+              </button>
+            </div>
+
+            <div class="pkg-card">
+              <div class="pkg-name">Ride + Polo + VIP Concert</div>
+              <p
+                style="
+                  font-size: 0.9rem;
+                  color: var(--text-muted);
+                  margin-bottom: 1rem;
+                  font-weight: 600;
+                "
+              >
+                Ride + Polo + wristband + VIP Concert Pass
+              </p>
+              <div class="pkg-price">
+                <span class="price-amount">GH¢750</span>
+              </div>
+              <button
+                class="btn btn-dark"
+                style="width: 100%; margin-top: auto"
+                onclick="openRegistrationModal('Ride + Polo', 250, 'VIP Concert Access', 500)"
+              >
+                Get VIP Bundle
+              </button>
+            </div>
+          </div>
+
+          <div style="margin-top: 2rem; text-align: center">
+            <p
+              style="font-size: 1rem; color: var(--text-main); font-weight: 700"
+            >
+              Want Presidential Access?
+              <strong
+                >Ride + Polo + Presidential Concert bundle is GH¢1,750.</strong
+              >
+              Available inside the registration form.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- REGISTRATION FLOW STEPS -->
+      <section class="section section-border-top">
+        <div class="container">
+          <div class="section-header">
+            <p class="badge-pop">5 Easy Steps</p>
+            <h2 class="section-title">How To Register</h2>
+          </div>
+
+          <div class="flow-grid">
+            <div class="flow-step">
+              <div class="flow-num">1</div>
+              <h3 class="flow-title">Select Package</h3>
+              <p class="flow-desc">Pick Ride Only, T-Shirt, or Polo.</p>
+            </div>
+
+            <div class="flow-step">
+              <div class="flow-num">2</div>
+              <h3 class="flow-title">Add Concert</h3>
+              <p class="flow-desc">
+                Upgrade to Regular, VIP, or Presidential concert pass.
+              </p>
+            </div>
+
+            <div class="flow-step">
+              <div class="flow-num">3</div>
+              <h3 class="flow-title">Apparel Size</h3>
+              <p class="flow-desc">Choose your fitted apparel size.</p>
+            </div>
+
+            <div class="flow-step">
+              <div class="flow-num">4</div>
+              <h3 class="flow-title">Review Total</h3>
+              <p class="flow-desc">Confirm your custom package total.</p>
+            </div>
+
+            <div class="flow-step">
+              <div class="flow-num">5</div>
+              <h3 class="flow-title">Submit & Ride</h3>
+              <p class="flow-desc">
+                Complete registration & get ready to ride!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- RIDER REGISTRATION MODAL FORM -->
+    <div class="modal-overlay" id="registrationModal">
+      <div class="modal-card">
+        <button class="modal-close" onclick="closeModal('registrationModal')">
+          &times;
+        </button>
+        <p
+          class="badge-pop"
+          style="
+            transform: rotate(-1deg);
+            font-size: 0.75rem;
+            margin-bottom: 0.75rem;
+          "
+        >
+          Join The Caravan
+        </p>
+        <h3
+          class="section-title"
+          style="font-size: 2rem; margin-bottom: 0.5rem"
+        >
+          Fugu Ride Registration
+        </h3>
+        <p
+          style="
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+          "
+        >
+          Complete the steps below to lock in your ride pass and upgrades.
+        </p>
+
+        <form id="riderForm" onsubmit="handleFormSubmit(event)">
+          <!-- STEP 1: RIDER PACKAGE -->
+          <div class="form-group">
+            <label class="form-label">STEP 1: Select Rider Package</label>
+            <select
+              id="riderPackage"
+              class="form-select"
+              onchange="calculateTotal()"
+              required
+            >
+              <option value="100" data-name="Ride Only">
+                1. Ride Only — GH¢100
+              </option>
+              <option value="150" data-name="Ride + T-Shirt">
+                2. Ride + T-Shirt — GH¢150
+              </option>
+              <option value="250" data-name="Ride + Polo">
+                3. Ride + Polo — GH¢250
+              </option>
+            </select>
+          </div>
+
+          <!-- APPAREL SIZE (CONDITIONALLY VISIBLE) -->
+          <div class="form-group" id="sizeGroup">
+            <label class="form-label"
+              >STEP 3: Apparel Size (T-Shirt / Polo)</label
+            >
+            <select id="apparelSize" class="form-select">
+              <option value="S">Small (S)</option>
+              <option value="M" selected>Medium (M)</option>
+              <option value="L">Large (L)</option>
+              <option value="XL">Extra Large (XL)</option>
+              <option value="XXL">2XL</option>
+            </select>
+          </div>
+
+          <!-- STEP 2: CONCERT UPGRADE -->
+          <div class="form-group">
+            <label class="form-label">STEP 2: Add Grand Concert Access</label>
+            <select
+              id="concertUpgrade"
+              class="form-select"
+              onchange="calculateTotal()"
+            >
+              <option value="0" data-name="No Concert Ticket">
+                No Concert Ticket (Ride Only)
+              </option>
+              <option value="100" data-name="Regular Concert Access">
+                Regular Concert Access — +GH¢100
+              </option>
+              <option value="500" data-name="VIP Concert Access">
+                VIP Concert Access — +GH¢500
+              </option>
+              <option value="1500" data-name="Presidential Concert Access">
+                Presidential Concert Access — +GH¢1,500
+              </option>
+            </select>
+          </div>
+
+          <!-- STEP 4 & 5: RIDER DETAILS -->
+          <div class="form-grid form-grid-2">
+            <div class="form-group">
+              <label class="form-label">Full Name</label>
+              <input
+                type="text"
+                class="form-input"
+                required
+                placeholder="Kwame Mensah"
+              />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">WhatsApp / Phone</label>
+              <input
+                type="tel"
+                class="form-input"
+                required
+                placeholder="+233 24 000 0000"
+              />
+            </div>
+          </div>
+
+          <div class="form-grid form-grid-2">
+            <div class="form-group">
+              <label class="form-label">Email Address</label>
+              <input
+                type="email"
+                class="form-input"
+                required
+                placeholder="kwame@example.com"
+              />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Motorcycle Model / Make</label>
+              <input
+                type="text"
+                class="form-input"
+                placeholder="e.g. BMW GS 1250 / Yamaha MT-07"
+              />
+            </div>
+          </div>
+
+          <!-- SUMMARY (STEP 4) -->
+          <div class="summary-box">
+            <div class="summary-row">
+              <span id="summaryPkgName">Package: Ride Only</span>
+              <span id="summaryPkgPrice">GH¢100</span>
+            </div>
+            <div class="summary-row">
+              <span id="summaryConcertName">Concert: None</span>
+              <span id="summaryConcertPrice">GH¢0</span>
+            </div>
+            <div class="summary-row summary-total">
+              <span>STEP 4: Total Amount</span>
+              <span id="summaryTotal">GH¢100</span>
+            </div>
+          </div>
+
+          <!-- STEP 5: SUBMIT -->
+          <button type="submit" class="btn btn-pop" style="width: 100%">
+            STEP 5: Complete & Register Now
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
